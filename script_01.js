@@ -35,12 +35,34 @@
     /********* Funktionen 02c ********/
     // 2c. Mehrere Parameter
 
-    function ausgabeNameParam(firstName, familyName) // Parameter
-    {
-    console.log("Hello " + firstName + " " + familyName + "!"); //log=call
-    }
-    // ausgabeNameParam("Michael", "Müller");
-    ausgabeNameParam(prompt("Vorname?"),prompt("Nachname?"));
+    // function ausgabeNameParam(firstName, familyName) // Parameter
+    // {
+    // console.log("Hello " + firstName + " " + familyName + "!"); //log=call
+    // }
+    // // ausgabeNameParam("Michael", "Müller");
+    // ausgabeNameParam(prompt("Vorname?"),prompt("Nachname?"));
 
     // Funktionen können auch mehrere Parameter haben z.B
     // (firstname, familyName, Age...)
+
+
+/*********Funktionen 03a**********/
+// 03a. Vorbereitung
+// Postulat: one function = one job (uncle bob)
+// SRP single responsibility principle
+
+
+
+    ausgabeNameParam2("Michael", "Müller"); // Argument
+
+
+    function ausgabeNameParam2(firstName, familyName) // Parameter
+{
+        // Funktionalität: string composing
+    const gap = " ";
+    const outputStr = "Hello " + firstName + gap + familyName + "!";
+
+        // Funtionalittät: data output
+    
+    console.log(outputStr); 
+    }
