@@ -52,17 +52,30 @@
 // SRP single responsibility principle
 
 
+    // ausgabeNameParam2("Michael", "Müller"); // Argument
 
-    ausgabeNameParam2("Michael", "Müller"); // Argument
 
+    // function ausgabeNameParam2(firstName, familyName) // Parameter
 
-    function ausgabeNameParam2(firstName, familyName) // Parameter
-{
-        // Funktionalität: string composing
-    const gap = " ";
+//         // Funktionalität: string composing
+   { const gap = " ";
     const outputStr = "Hello " + firstName + gap + familyName + "!";
+return outputStr;
+console.log("Funktion beendet")
+   }
+//         // Funtionalittät: data output
+   
+/********* Funktionen 03b ********/
+// Trennen der Funktionalitäten | return
 
-        // Funtionalittät: data output
-    
-    console.log(outputStr); 
-    }
+// 2. Funktionalität: string output
+// output("hi");
+
+function output(outputData)
+{
+    console.log(outputData);
+}
+
+output(getString("Maxine","Mütze"));
+function getString(firstName, familyName)
+console.log(outputData);
