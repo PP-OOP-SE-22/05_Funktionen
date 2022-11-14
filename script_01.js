@@ -56,18 +56,27 @@
 
 
     // function ausgabeNameParam2(firstName, familyName) // Parameter
+/********** Funktion 03b *********/
+// trenne der Funktionalitäten | return
 
-//         // Funktionalität: string composing
+// 1. Funktionalität: string composing
    { const gap = " ";
     const outputStr = "Hello " + firstName + gap + familyName + "!";
-return outputStr;
-console.log("Funktion beendet")
+    return outputStr;
+    console.log("Funktion beendet")
    }
 //         // Funtionalittät: data output
    
 /********* Funktionen 03b ********/
 // Trennen der Funktionalitäten | return
-
+output(getString("Maxine","Mütze"));
+output("hallo Maxine!, !Mütze!");
+function getString(firstName, familyName)
+{   const gap = " ";
+    const outputStr = "Hello " + firstName + gap + familyName + "!";
+    return outputStr;
+    console.log(outputData);
+}
 // 2. Funktionalität: string output
 // output("hi");
 
@@ -76,6 +85,3 @@ function output(outputData)
     console.log(outputData);
 }
 
-output(getString("Maxine","Mütze"));
-function getString(firstName, familyName)
-console.log(outputData);
